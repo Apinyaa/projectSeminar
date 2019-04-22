@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FE7F9C"
+    tools:context=".MainActivity"
+    android:theme="@style/AppTheme">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRO TEEN MOM"
+        android:fontFamily="@font/jasminupc"
+        android:textSize="30sp"
+        android:layout_below="@+id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  NEXT>>  "
+        android:fontFamily="@font/rsuregular"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtLogo"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        />
+
+</RelativeLayout>

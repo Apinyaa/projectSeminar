@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_user"
+    android:background="#FE7F9C">
+
+    <ImageView
+        android:id="@+id/img_userlog1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/teenmom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_userlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     เข้าสู่ระบบ    "
+        android:textSize="25dp"
+        android:fontFamily="@font/rsubold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_userlog1"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/txt_Uusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ชื่อผู้ใช้งาน :"
+        android:textSize="20dp"
+        android:fontFamily="@font/rsubold"
+        android:textColor="@color/white"
+        android:layout_toStartOf="@id/txt_userlogin"
+        android:layout_below="@id/txt_userlogin"/>
+
+    <EditText
+        android:id="@+id/edt_Uusername"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/rsuregular"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:layout_below="@+id/txt_userlogin"
+        android:layout_toRightOf="@id/txt_Uusername"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/txt_Upassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="รหัสผ่าน :"
+        android:textSize="20dp"
+        android:fontFamily="@font/rsubold"
+        android:textColor="@color/white"
+        android:layout_toStartOf="@id/txt_userlogin"
+        android:layout_below="@id/txt_Uusername"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_Upassword"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/rsuregular"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:layout_below="@+id/txt_Uusername"
+        android:layout_toRightOf="@id/txt_Uusername"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/ckb_rememberpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="จดจำรหัสผ่าน"
+        android:fontFamily="@font/rsuregular"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_Upassword"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_Ulogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="เข้าสู่ระบบ"
+        android:layout_below="@+id/ckb_rememberpass"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/rsuregular"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/txt_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="หรือ"
+        android:textSize="20dp"
+        android:fontFamily="@font/rsubold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_Ulogin"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_URegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="ลงทะเบียน"
+        android:layout_below="@+id/txt_or"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/rsuregular"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        />
+
+    <ImageView
+        android:id="@+id/img_userlog2"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/teenmom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_URegister"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>

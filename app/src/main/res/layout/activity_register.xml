@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="#FE7F9C">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/srcoll_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_mom"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/mother"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="55dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_addmom"
+                android:text="เพิ่มประวัติคุณแม่"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/img_mom"
+                />
+
+            <TextView
+                android:id="@+id/txt_usernaname"
+                android:text="ชื่อผู้ใช้งาน :"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/img_mom"
+                android:layout_marginTop="25dp"
+                android:layout_toStartOf="@id/txt_addmom"
+                />
+
+            <EditText
+                android:id="@+id/edt_usernaname"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_addmom"
+                android:layout_toRightOf="@id/txt_usernaname"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rsuregular"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txt_password"
+                android:text="รหัสผ่าน :"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_usernaname"
+                android:layout_marginTop="25dp"
+                android:layout_toStartOf="@id/txt_addmom"
+                />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_usernaname"
+                android:layout_toRightOf="@id/txt_usernaname"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rsuregular"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                />
+
+            <TextView
+                android:id="@+id/txt_conpassword"
+                android:text="ยืนยันรหัสผ่าน:"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_password"
+                android:layout_marginTop="25dp"
+                android:layout_toStartOf="@id/txt_addmom"
+                />
+
+            <EditText
+                android:id="@+id/edt_conpassword"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_password"
+                android:layout_toRightOf="@id/txt_conpassword"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rsuregular"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                />
+
+            <TextView
+                android:id="@+id/txt_momName"
+                android:text="ชื่อคุณแม่ :"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_conpassword"
+                android:layout_marginTop="25dp"
+                android:layout_toStartOf="@id/txt_addmom"
+                />
+
+            <EditText
+                android:id="@+id/edt_momName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_conpassword"
+                android:layout_toRightOf="@id/txt_conpassword"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rsuregular"
+                android:textSize="20dp"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:id="@+id/txt_momAge"
+                android:text="อายุ :"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_momName"
+                android:layout_marginTop="25dp"
+                android:layout_toStartOf="@id/txt_addmom"
+                />
+
+
+                <EditText
+                    android:id="@+id/edt_momAge"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_momName"
+                    android:layout_toRightOf="@id/txt_conpassword"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/rsuregular"
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    />
+
+            <TextView
+                android:id="@+id/txt_YmomAge"
+                android:text="ปี"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_momName"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/edt_momAge"
+                />
+
+            <TextView
+                android:id="@+id/txt_blood"
+                android:text="หมู่เลือด :"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_momAge"
+                android:layout_marginTop="25dp"
+                android:layout_toStartOf="@id/txt_addmom"
+                />
+
+                <RadioGroup
+                    android:id="@+id/rdo_blood"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_momAge"
+                    android:layout_toRightOf="@id/txt_conpassword"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:fontFamily="@font/rsuregular"
+                    android:textSize="20dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginTop="25dp"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/a_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:checked="true"
+                        android:fontFamily="@font/rsuregular"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        />
+                    <RadioButton
+                        android:id="@+id/b_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "B"
+                        android:fontFamily="@font/rsuregular"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        />
+                    <RadioButton
+                        android:id="@+id/ab_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "AB"
+                        android:fontFamily="@font/rsuregular"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        />
+                    <RadioButton
+                        android:id="@+id/o_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "O"
+                        android:fontFamily="@font/rsuregular"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        />
+
+                </RadioGroup>
+
+            <TextView
+                android:id="@+id/txt_weight"
+                android:text="น้ำหนัก :"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_blood"
+                android:layout_marginTop="25dp"
+                android:layout_toStartOf="@id/txt_addmom"
+                />
+
+            <EditText
+                android:id="@+id/edt_weight"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_blood"
+                android:layout_toRightOf="@id/txt_conpassword"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rsuregular"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_Kweight"
+                android:text="กิโลกรัม"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_blood"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/edt_weight"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_hight"
+                android:text="ส่วนสูง :"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_weight"
+                android:layout_marginTop="25dp"
+                android:layout_toStartOf="@id/txt_addmom"
+                />
+
+            <EditText
+                android:id="@+id/edt_hight"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_weight"
+                android:layout_toRightOf="@id/txt_conpassword"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rsuregular"
+                android:textSize="20dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:id="@+id/txt_cm"
+                android:text="เซนติเมตร"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_weight"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/edt_hight"
+                android:layout_marginLeft="5dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_disease"
+                android:text="โรคประจำตัว :"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_hight"
+                android:layout_marginTop="25dp"
+                android:layout_toStartOf="@id/txt_addmom"
+                />
+
+            <EditText
+                android:id="@+id/edt_disease"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_hight"
+                android:layout_toRightOf="@id/txt_disease"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rsuregular"
+                android:textSize="20dp"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:id="@+id/txt_period"
+                android:text="วันแรกของประจำเดือนครั้งล่าสุด :"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rsuregular"
+                android:layout_below="@+id/txt_disease"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                />
+
+                <EditText
+                    android:id="@+id/edt_period"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_disease"
+                    android:layout_toRightOf="@id/txt_period"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/rsuregular"
+                    android:textSize="20dp"
+                    android:inputType="date"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_givebirth"
+                    android:text="กำหนดคลอด :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/rsuregular"
+                    android:layout_below="@+id/txt_period"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="15dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/edt_givebirth"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edt_period"
+                    android:layout_toRightOf="@id/txt_givebirth"
+                    android:layout_marginLeft="3dp"
+                    android:fontFamily="@font/rsuregular"
+                    android:textSize="20dp"
+                    android:inputType="date"
+                    />
+
+                <Button
+                android:id="@+id/btn_addProfile"
+                android:text="  เพิ่มประวัติ  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/rsuregular"
+                android:background="@color/blue"
+                android:layout_below="@+id/txt_givebirth"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                />
+
+            <Button
+                android:id="@+id/btn_cancle"
+                android:text="ยกเลิก"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/rsuregular"
+                android:background="@color/red"
+                android:layout_below="@+id/txt_givebirth"
+                android:layout_toRightOf="@+id/btn_addProfile"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                />
+            </RelativeLayout>
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

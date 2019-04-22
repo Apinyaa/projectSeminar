@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FE7F9C"
+    tools:context=".proteenmom">
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:shownWeekCount="3"
+        android:maxDate="31">
+
+    </CalendarView>
+
+    <TextView
+        android:id="@+id/txtPreg"
+        android:text="อายุครรภ์"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/calendar"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="@font/rsuregular"/>
+
+    <TextView
+        android:id="@+id/hintPreg"
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/calendar"
+        android:layout_toRightOf="@+id/txtPreg"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/rsuregular"/>
+
+    <TextView
+        android:id="@+id/txtWeek"
+        android:text="สัปดาห์"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/calendar"
+        android:layout_toRightOf="@id/hintPreg"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/rsuregular"/>
+
+    <TextView
+        android:id="@+id/hintDay"
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/calendar"
+        android:layout_toRightOf="@id/txtWeek"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/rsuregular"/>
+
+    <TextView
+        android:id="@+id/txtDay"
+        android:text="วัน"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/calendar"
+        android:layout_toRightOf="@id/hintDay"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/rsuregular"/>
+
+    <ImageView
+        android:id="@+id/img_baby"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txtPreg"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnRecomend"
+        android:text="คำแนะนำ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:background="#1023E3"
+        android:layout_below="@+id/img_baby"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/rsubold"
+        />
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabHost
+            android:id="@+id/tabHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TabWidget
+                    android:id="@+id/tabMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TabWidget>
+                <FrameLayout
+                    android:id="@+id/tabContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/tabInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="ประชาสัมพันธ์"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/rsuregular"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tabNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="บันทึกกิจกรรม"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/rsuregular"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tabFeel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="อาหารผิดปกติ"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/rsuregular"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tabChat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="ปรึกษาแพทย์"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/rsuregular"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout> -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FE7F9C"
+        >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TableLayout
+                android:fontFamily="@font/rsuregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                // Row1
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:weightSum="1"
+                    android:layout_weight="0.33">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/card_news"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            card_view:cardBackgroundColor="@color/white">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/img_newspaper"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="37dp"
+                                    android:src="@drawable/newspaper"
+                                    android:layout_marginTop="3dp"/>
+
+                                <TextView
+                                    android:id="@+id/txt_news"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ประชาสัมพันธ์"
+                                    android:fontFamily="@font/rsuregular"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:layout_below="@id/img_newspaper"
+                                    android:layout_centerHorizontal="true"/>
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/card_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            card_view:cardBackgroundColor="@color/white">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/img_note"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="37dp"
+                                    android:src="@drawable/note"
+                                    android:layout_marginTop="3dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="บันทึกกิจกรรม"
+                                    android:fontFamily="@font/rsuregular"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:layout_below="@id/img_note"
+                                    android:layout_centerHorizontal="true"/>
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/card_symptom"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            card_view:cardBackgroundColor="@color/white">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/img_file"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="37dp"
+                                    android:src="@drawable/file"
+                                    android:layout_marginTop="3dp"/>
+
+                                <TextView
+                                    android:id="@+id/txt_symptom"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="อาการ"
+                                    android:fontFamily="@font/rsuregular"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:layout_below="@id/img_file"
+                                    android:layout_centerHorizontal="true"/>
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/card_chat"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            card_view:cardBackgroundColor="@color/white">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/img_chat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="37dp"
+                                    android:src="@drawable/chat"
+                                    android:layout_marginTop="3dp"/>
+
+                                <TextView
+                                    android:id="@+id/txt_chat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ปรึกษาแพทย์"
+                                    android:fontFamily="@font/rsuregular"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"
+                                    android:layout_below="@id/img_chat"
+                                    android:layout_centerHorizontal="true"/>
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
